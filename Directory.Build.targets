@@ -1,0 +1,10 @@
+<Project>
+    <PropertyGroup>
+        <DocumentationFile>Properties\$(AssemblyName).xml</DocumentationFile>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <InternalsVisibleTo Include="Clean.Architecture.Design.Tests" />
+        <InternalsVisibleTo Include="$(AssemblyName).Tests" />
+    </ItemGroup>
+</Project>

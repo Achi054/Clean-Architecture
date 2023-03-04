@@ -1,0 +1,14 @@
+<Project>
+    <PropertyGroup>
+        <!-- Base namespace -->
+        <BaseNamespace>Clean.Architecture</BaseNamespace>
+
+        <!-- Build properties -->
+        <TargetFramework>net7.0</TargetFramework>
+        <LangVersion>latest</LangVersion>
+        <Nullable>enable</Nullable>
+        <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+        <WarningsAsErrors />
+        <NoWarn>1701;1702;1591;NU5104;NU5105</NoWarn>
+    </PropertyGroup>
+</Project>
