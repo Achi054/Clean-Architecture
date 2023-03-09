@@ -10,12 +10,11 @@ namespace Clean.Architecture.Domain
            Guid id,
            Member member,
            Gathering gathering)
+            : base(id)
         {
-            Id = id;
             MemberId = member.Id;
             GatheringId = gathering.Id;
             Status = InvitationStatus.Pending;
-            CreatedOnUtc = DateTime.UtcNow;
         }
 
         public enum InvitationStatus

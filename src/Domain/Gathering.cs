@@ -17,8 +17,8 @@ namespace Clean.Architecture.Domain
             DateTime scheduledAtUtc,
             string name,
             string? location)
+            : base(id)
         {
-            Id = id;
             Creator = creator;
             Type = type;
             ScheduledAtUtc = scheduledAtUtc;
