@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <AssemblyName>$(BaseNamespace).Concerns</AssemblyName>
+    <RootNamespace>$(AssemblyName)</RootNamespace>
+    <IsPackable>true</IsPackable>
+    <Title>Cross cutting concerns package for Clean Architecture</Title>
+    <VersionPrefix>1.0.0</VersionPrefix>
+    <VersionSuffix>alpha</VersionSuffix>
+    <Authors>Sujith Acharya</Authors>
+    <Description>
+      Clean.Architecture.Concerns in Clean Architecture is a shared library that can used in all the layers.
+      The library caters cross cutting concerns across the layers.
+    </Description>
+    <PackageOutputPath>lib</PackageOutputPath>
+  </PropertyGroup>
+
+</Project>
