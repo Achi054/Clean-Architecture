@@ -5,7 +5,7 @@ using Clean.Architecture.Domain.Shared;
 
 namespace Clean.Architecture.Domain
 {
-    internal sealed class Gathering : Entity
+    internal sealed class Gathering : AggregateRoot
     {
         private readonly List<Invitation> _invitations = new();
         private readonly List<Attendee> _attendees = new();

@@ -1,6 +1,7 @@
 ﻿using System;
 
 using Clean.Architecture.Domain.Shared;
+using Clean.Architecture.Domain.ValueObjects;
 
 namespace Clean.Architecture.Domain
 {
@@ -8,9 +9,9 @@ namespace Clean.Architecture.Domain
     {
         public Member(
             Guid id,
-            string firstName,
-            string lastName,
-            string email)
+            FirstName firstName,
+            LastName lastName,
+            Email email)  
             : base(id)
         {
             FirstName = firstName;
@@ -18,10 +19,10 @@ namespace Clean.Architecture.Domain
             Email = email;
         }
 
-        public string FirstName { get; private set; }
+        public FirstName FirstName { get; private set; }
 
-        public string LastName { get; private set; }
+        public LastName LastName { get; private set; }
 
-        public string Email { get; private set; }
+        public Email Email { get; private set; } 
     }
 }

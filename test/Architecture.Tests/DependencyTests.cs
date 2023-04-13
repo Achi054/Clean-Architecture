@@ -41,7 +41,7 @@ namespace Clean.Architecture.Design.Tests
         public void Application_Should_Not_HaveDependencyOnOtherProjects()
         {
             // Arrange
-            var assembly = typeof(Application.TestClass).Assembly;
+            var assembly = typeof(Application.AssemblyReference).Assembly;
 
             var projectReferencable = new[]
             {
@@ -88,7 +88,7 @@ namespace Clean.Architecture.Design.Tests
         public void Presentation_Should_Not_HaveDependencyOnOtherProjects()
         {
             // Arrange
-            var assembly = typeof(Presentation.TestClass).Assembly;
+            var assembly = typeof(Presentation.AssemblyReference).Assembly;
 
             var projectReferencable = new[]
             {

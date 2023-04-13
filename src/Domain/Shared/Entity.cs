@@ -2,7 +2,7 @@
 
 namespace Clean.Architecture.Domain.Shared
 {
-    internal abstract class Entity : IEquatable<Entity>
+    public abstract class Entity : IEquatable<Entity>
     {
         public Entity(Guid id)
             => (Id, CreatedOnUtc) = (id, DateTime.UtcNow);
